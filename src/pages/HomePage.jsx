@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
 
-import HomeTab from "../components/tabs/HomeTab";
+import HomeTab from "../components/tabs/Tab";
 
 import home from "../assets/home.png";
 import shorts from "../assets/shorts.svg";

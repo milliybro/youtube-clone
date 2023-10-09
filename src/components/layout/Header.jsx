@@ -2,39 +2,43 @@ import "./layout.scss";
 import "./Header.scss";
 import menu from "../../assets/menu.svg";
 import logo from "../../assets/logo.png";
-import search from "../../assets/search.svg";
+import searcha from "../../assets/search.svg";
 import mic from "../../assets/mic.png";
 import create from "../../assets/videocreate.png";
 import notification from "../../assets/noticifation.svg";
 import milliybro from "../../assets/photo_2023-08-07_12-24-16.jpg";
-// import {  useState } from "react";
-// import useScreenSize from "../hooks/ScreenSize";
-// import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-
+import { useState } from "react";
 
 const Header = ({ sidebarOpen }) => {
-    // const [searchShow, setSearchShow] = useState(false);
-    // const screenSize = useScreenSize();
+  const [search] = useState("");
+
+function Search(){
+  
+}
+
   return (
     <header>
       <div className="nav container-mb d-flex justify-content-between align-items-center py-2">
         <div className="logos d-flex align-items-center gap-1">
-        <button
-                  onClick={() => sidebarOpen()}
-                  className="sidebar ms-2"
-                >
-          <img width={50} className="pe-4 menu" src={menu} alt="" />
-                </button>
-              
+          <button onClick={() => sidebarOpen()} className="sidebar ms-2">
+            <img width={50} className="pe-4 menu" src={menu} alt="" />
+          </button>
+
           <img width={40} src={logo} alt="" />
           <h5 className="logo">MilliyTube</h5>
         </div>
         <div className="nav-center">
           <div className="input d-flex gap-2">
-            <input className="" type="text" placeholder="Search" />
+            <input
+              value={search}
+              onChange={(e) => Search(e.target.value)}
+              className=""
+              type="text"
+              placeholder="Search"
+            />
             <button className="search">
-              <img className="search-img" src={search} />
+              <img className="search-img" src={searcha} />
             </button>
           </div>
           <div className="mic">
@@ -128,7 +132,6 @@ const Header = ({ sidebarOpen }) => {
     </header>
   );
 };
-
 
 Header.propTypes = {
   sidebarOpen: PropTypes.func,

@@ -4,6 +4,6 @@ const channelType = "any";
 const results = 20;
 const order = "title";
 
-let finalSearchResult = `${ENDPOINT}?key=${KEY}&channelType=${channelType}&maxResults=${results}&order=${order}`
+let searchURL = `${ENDPOINT}?key=${KEY}&channelType=${channelType}&maxResults=${results}&order=${order}`
 
-export default finalSearchResult;
+export default searchURL;
