@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 import { Offcanvas } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Fragment } from "react";
 
 import menu from "../../assets/menu.svg";
@@ -34,7 +34,7 @@ const SideBar = ({ show, sidebarClose }) => {
               <button onClick={sidebarClose} className="sidebar-close">
                 <img width={28} src={menu} alt="Sidebar Menu" /> 
               </button>
-              <Link to="/home" title="Youtube Home" className="sidebar-logo text-white">
+              <Link to="" title="Youtube Home" className="sidebar-logo text-white">
                 <img width={40} src={logo} alt="Youtube Logo" />
                 MilliyTube
               </Link>
@@ -43,62 +43,62 @@ const SideBar = ({ show, sidebarClose }) => {
         </Offcanvas.Header>
         <Offcanvas.Body className="sidebara">
           <div className="sidebar-top">
-            <div className="sidebar-option">
+            <NavLink to="" className="sidebar-option">
               <button className="sidebar-option-btn">
                 <img src={home} alt="Home Icon" />
                 Home
               </button>
-            </div>
-            <div className="sidebar-option">
+            </NavLink>
+            <NavLink to="/shorts" className="sidebar-option">
               <button className="sidebar-option-btn">
                 <img src={shorts} alt="Explore Icon" />
                 Shorts
               </button>
-            </div>
-            <div className="sidebar-option">
+            </NavLink>
+            <NavLink to="subs" className="sidebar-option">
               <button className="sidebar-option-btn">
                 <img src={subs} alt="Shorts Icon" />
                 Subscriptions
               </button>
-            </div>
+            </NavLink>
           </div>
           <hr className="line"/>
           <div className="sidebar-middle">
             <div className="sidebar-option">
-              <button className="sidebar-option-btn">
+              <NavLink to="library" className="sidebar-option-btn">
                 <img src={library} alt="Library Icon" />
                 Library
-              </button>
+              </NavLink>
             </div>
             <div className="sidebar-option">
-              <button className="sidebar-option-btn">
+              <NavLink to="/history" className="sidebar-option-btn">
                 <img src={history} alt="History Icon" />
                 History
-              </button>
+              </NavLink>
             </div>
             <div className="sidebar-option">
-              <button className="sidebar-option-btn">
+              <NavLink to="videos" className="sidebar-option-btn">
                 <img src={videos} alt="Your-videos Icon" />
                 Your videos
-              </button>
+              </NavLink>
             </div>
             <div className="sidebar-option">
-              <button className="sidebar-option-btn">
+              <NavLink to="watch" className="sidebar-option-btn">
                 <img src={watch} alt="Watch-later Icon" />
                 Watch Later
-              </button>
+              </NavLink>
             </div>
             <div className="sidebar-option">
-              <button className="sidebar-option-btn">
+              <NavLink to="downloads" className="sidebar-option-btn">
                 <img src={downloads} alt="Pop Icon" />
                 Downloads
-              </button>
+              </NavLink>
             </div>
             <div className="sidebar-option">
-              <button className="sidebar-option-btn">
+              <NavLink to="liked" className="sidebar-option-btn">
                 <img src={like} alt="Pop Icon" />
                 Liked videos
-              </button>
+              </NavLink>
             </div>
           </div>
           <hr className="line"/>
