@@ -1,0 +1,110 @@
+.nav {
+  display: flex;
+  justify-content: space-between !important;
+}
+.logo {
+  color: #ffffff;
+  margin: 0;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+}
+.milliybro {
+  width: 45px;
+  border-radius: 50%;
+}
+.menu {
+  cursor: pointer;
+}
+
+.nav-center {
+  display: flex;
+  .input {
+    display: flex;
+    position: relative;
+    input {
+      padding: 10px;
+      width: 600px;
+      border-radius: 20px;
+      border: 1px solid rgba(211, 211, 211, 0.3);
+      background: transparent;
+      box-shadow: 1px 1px 2px 0px rgba(211, 211, 211, 0.3) inset;
+      color: rgba(211, 211, 211, 0.5);
+      font-family: Roboto;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+.search {
+  position: absolute;
+  right: 0;
+  background-color: #302f2f;
+  padding: 12px 20px;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  &-img {
+    background-color: transparent;
+  }
+}
+
+.mic {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #302f2f;
+  border-radius: 50%;
+  padding: 10px 13px;
+  cursor: pointer;
+  &-img {
+    background-color: transparent;
+  }
+}
+
+.create {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  &:hover {
+    background-color: #302f2f;
+  }
+  &-img {
+    background-color: transparent;
+  }
+}
+
+.notification {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  &:hover {
+    background-color: #302f2f;
+  }
+  &-img {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.sidebar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 9px;
+  cursor: pointer;
+  border: none;
+  &:hover {
+    background-color: #302f2f;
+  }
+  img {
+    background-color: transparent;
+  }
+}

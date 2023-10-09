@@ -1,0 +1,11 @@
+
+
+html *{
+  background-color: #0F0F0F  ;
+}
+
+.container-mb{
+  max-width: 1470px;
+  margin: 0 auto;
+
+}
